@@ -1,4 +1,5 @@
 header {
+
     display: grid;
     grid-template-columns: 1fr auto auto;
     align-items: center;
@@ -35,5 +36,24 @@ header {
     justify-content: center;
     font-size: 1.5rem;
     border-radius: 50%;
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: 1fr 200px auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-tareas{
+    max-width: 30rem;
+    height: 100%;
+    border: 1px solid black;
+
+}
+
+.div-logo-usuario{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 100%;
     border: 1px solid black;
 }
