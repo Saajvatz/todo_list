@@ -10,7 +10,8 @@ export function header(){
     header.appendChild(divTareas);
 
     let divLogoUsuario = document.createElement('div');
-    divLogoUsuario.className = "div-logo[-usuario";
+    divLogoUsuario.className = "div-logo-usuario";
+    divLogoUsuario.innerText = "🤨";
     header.appendChild(divLogoUsuario);
 
     return header

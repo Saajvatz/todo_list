@@ -1,4 +1,4 @@
-import { header } from "../components/header/headerComponent";
+import { header } from "../components/header/headerComponent.js";
 
 
 
