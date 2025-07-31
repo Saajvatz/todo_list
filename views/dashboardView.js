@@ -1,19 +1,32 @@
 import { footer } from "../components/footer/footerComponent.js";
 import { header } from "../components/header/headerComponent.js";
+import { tareas } from "../components/tareas/tareasComponent.js";
+import { informacion } from "../components/informacion/informacionComponent.js";
 
 
 
 export function dashboard(){
 
-let seccion = document.createElement('section')    
+let dasdhboard = document.createElement('section')    
+dasdhboard.className = "dashboard";
    
-seccion.appendChild(header());
+//header
+dasdhboard.appendChild(header());
+
+//seccion
+let seccion1 = document.createElement('section');
+seccion1.className = "seccion-1"
+seccion1.appendChild(tareas());
+seccion1.appendChild(informacion());
+dasdhboard.appendChild(seccion1);
+
+//footer
+dasdhboard.appendChild(footer());
 
 
-seccion.appendChild(footer());
 
 
-    return seccion;
+    return dasdhboard;
 }
 
 document.body.appendChild(dashboard());
