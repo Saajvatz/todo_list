@@ -1,6 +1,6 @@
 export function tarea(titulo){
     let div = document.createElement('div');
-    div.innerText = titulo
+    div.textContent = titulo
 
     return div;
 }
